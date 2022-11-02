@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3cb86afd14.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200;400&family=Ms+Madi&family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="preLoader"></div>
+    <section class="header">
+        <div class="nav">
+            <img src="images/logo.png" alt="" class="logo">
+        </div>
+        <div class="content1">
+            <h1>Hair Studio</h1>
+            <p>Style your hair is Style your life</p>
+            <div class="btns">
+                <a href=""><span></span>Find Out</a>
+                <a href=""><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.png" alt="" id="menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        sidenav.style.right = "-250px"
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+    <section class="features">
+        <div class="head">
+            <h3>FEATURES</h3>
+            <i class="fas fa-leaf"></i>
+        </div>
+        <h1>Why Choose Us</h1>
+        <div class="content2">
+            <div class="col left">
+                <p class="para">Experienced Staff</p>
+                <div class="first">
+                    <i class="fab fa-apple"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dicta aperiam quia odit dolor vero!</p>
+                </div>
+                <p class="para">Pre Booking Online</p>
+                <div class="second">
+                    <i class="fas fa-check-square"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dicta aperiam quia odit dolor vero!</p>
+                </div>
+                <p class="para">Affordable Cost</p>
+                <div class="third">
+                    <i class="fas fa-rupee-sign"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dicta aperiam quia odit dolor vero!</p>
+                </div>
+            </div>
+            <div class="col right">
+                <img src="images/barber-man.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="head">
+            <h2>SERVICES</h2>
+            <i class="fas fa-leaf"></i>
+        </div>
+        <h1>We Provide Better</h1>
+        <div class="content3">
+            <div class="singleservice">
+                <img src="images/pic-1.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedescription">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, iusto?</p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="images/pic-2.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedescription">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, iusto?</p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="images/pic-3.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedescription">
+                    <h3>Hair Cut</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, iusto?</p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="images/pic-4.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedescription">
+                    <h3>Dry Shampoo</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, iusto?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="head">
+            <h2>TESTIMONIALS</h2>
+            <i class="fas fa-leaf"></i>
+            <h1>What Clients Say</h1>
+        </div>
+        <div class="content4">
+            <div class="test">
+                <img src="images/img-1.jpg" alt="">
+                <div class="name">
+                    <p>KEN NORMAN <i class="fa-brands fa-twitter"></i></p>
+                    <p class="blue">@kennorman</p>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit totam odit possimus quia ut laboriosam laborum deserunt consectetur aperiam ratione mollitia veritatis, aspernatur nostrum? Quis!</p>
+            </div>
+            <div class="test">
+                <img src="images/img-2.jpg" alt="">
+                <div class="name">
+                    <p>LIARA KARLAN <i class="fa-brands fa-twitter"></i></p>
+                    <p class="blue">@liarakarlan</p>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit totam odit possimus quia ut laboriosam laborum deserunt consectetur aperiam ratione mollitia veritatis, aspernatur nostrum? Quis!</p>
+            </div>
+            <div class="test">
+                <img src="images/img-3.jpg" alt="">
+                <div class="name">
+                    <p>RICKY DANIEL <i class="fa-brands fa-twitter"></i></p>
+                    <p class="blue">@rickrdaniel</p>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit totam odit possimus quia ut laboriosam laborum deserunt consectetur aperiam ratione mollitia veritatis, aspernatur nostrum? Quis!</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <img src="images/footer-img.png" alt="" class="back">
+        <div class="head1">
+            <h2>CONTACT</h2>
+            <i class="fas fa-leaf"></i>
+            <h1>Visit Shop Today</h1>
+        </div>    
+        <div class="content5">
+            <div class="open">
+                <h2>Opening Hours</h2>
+                <p><i class="fa-solid fa-clock"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa-solid fa-clock"></i>Saturday and Sunday - 8am to 11pm</p>
+            </div>
+            <div class="touch">
+                <h2>Get in touch</h2>
+                <p>#30 abc Colony xyz Vihar In <i class="fas fa-map-marker-alt"></i></p>
+                <p>Example@gmail.com <i class="fab fa-telegram-plane"></i></p>
+                <p>+91 1947351937 <i class="fas fa-phone-alt"></i></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <p>Copyright 2022 Simmi Mishra</p>
+        </div>
+        
+    </section>
+
+    <script>
+
+        var loader = document.getElementById('preLoader');
+        addEventListener('load',function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+</html> 
